@@ -1,0 +1,6 @@
+torch==2.7.0
+torchvision==0.22.0
+open_clip_torch==3.2.0
+transformers==4.57.1
+kornia==0.8.1
+git+https://github.com/necla-ml/Diff-JPEG.git
