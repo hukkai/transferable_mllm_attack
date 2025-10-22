@@ -16,11 +16,12 @@ path = kagglehub.dataset_download("google-brain/nips-2017-adversarial-learning-d
 os.system(f"mv {path} ./nips2017_adv_dev/")
 ```
 
-2. Link the ImageNet dataset (only the validation set is needed) to the `data` folder. Extract features for ImageNet validation set images:
+2. Extract features for ImageNet validation set images.
+First Link the ImageNet dataset (only the validation set is needed) to the `data` folder, and then run the following command
 ```
 python3 utils/extract_feat.py --mdoel_id 0
 ```
-We will also provide our extracted features soon.
+You can also use our extracted features shared in [google drive](https://drive.google.com/file/d/1UuUWdYw5EWFaVl0G_tPiylqS_VM4xnrH/view?usp=share_link). Untar the file and put it under the `data` folder.
 
 3. Optimize the attack:
 ```
