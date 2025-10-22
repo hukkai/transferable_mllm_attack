@@ -26,5 +26,7 @@ We will also provide our extracted features soon.
 ```
 bash run.sh
 ```
-Generated attacks will be saved at `results/saved_folder/`, where "saved_folder" is specified in `batch_attack.py`, for example `s299_x9_eps8`. Images with file name starting with "ema_" are the final outputs.
+Generated attacks will be saved at `results/saved_folder/`, where "saved_folder" is specified in `batch_attack.py`, for example `s299_x9_eps8`. Images with file name starting with "ema_" are the final outputs. 
+
+This [google drive](https://drive.google.com/drive/folders/1jCC2Nu8_miZQEf_LbKHUejRYzhhOgVQ6?usp=sharing) contains some generated images from our method.
 
