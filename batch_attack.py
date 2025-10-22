@@ -43,9 +43,7 @@ def get_args():
     parser.add_argument("--exclude", type=int, default=8)
     parser.add_argument("--model_dtype", type=str, default="float16")
 
-    parser.add_argument("--batch_size", type=int, default=21)
-
-    parser.add_argument("--job_id", type=int, default=0)
+    parser.add_argument("--batch_size", type=int, default=25)
 
     return parser.parse_args()
 
@@ -119,7 +117,6 @@ def main():
     ema_path = data_root + "/ema_{i}.png"
 
     dataset = read_dataset()
-    dataset = dataset[167 * args.job_id : 167 * (args.job_id + 1)]
 
     dataset = [j for i, j in enumerate(dataset) if i % world_size == rank]
     dataset = [i for i in dataset if not os.path.isfile(save_path.format(i=i.image_id))]
