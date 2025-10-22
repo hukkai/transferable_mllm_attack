@@ -9,11 +9,11 @@ Below is a simple instruction for how to run our code. Detailed instructions for
 
 ## Quick start
 
-1. Prepare the dataset: create a `data` folder under this repo and run the following command under the `data` folder:import kagglehub
-
+1. Prepare the dataset: create a `data` folder under this repo and run the following command under the `data` folder:
 ```
+import os, kagglehub
 path = kagglehub.dataset_download("google-brain/nips-2017-adversarial-learning-development-set")
-print("Path to dataset files:", path)
+os.system(f"mv {path} ./nips2017_adv_dev/")
 ```
 
 2. Link the ImageNet dataset (only the validation set is needed) to the `data` folder. Extract features for ImageNet validation set images:
